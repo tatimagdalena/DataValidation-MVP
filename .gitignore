@@ -1,0 +1,10 @@
+# Ignore system files
+.DS_Store
+
+# Ignore user data
+DataValidation-MVP.xcodeproj/project.xcworkspace/xcuserdata/
+DataValidation-MVP.xcodeproj/xcuserdata/
+DataValidation-MVP.xcworkspace/xcuserdata/
+
+# Ignore build
+/Build
