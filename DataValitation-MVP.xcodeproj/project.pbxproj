@@ -11,6 +11,8 @@
 		169DCCF32023CAA00028746F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169DCCF22023CAA00028746F /* Assets.xcassets */; };
 		169DCCF62023CAA00028746F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169DCCF42023CAA00028746F /* LaunchScreen.storyboard */; };
 		169DCD012023CAA10028746F /* DataValitation_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */; };
+		169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD0B2023D0050028746F /* RegistrationViewController.swift */; };
+		169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169DCD0C2023D0050028746F /* RegistrationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		169DCCFC2023CAA00028746F /* DataValitation-MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DataValitation-MVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValitation_MVPTests.swift; sourceTree = "<group>"; };
 		169DCD022023CAA10028746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169DCD0B2023D0050028746F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		169DCD0C2023D0050028746F /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				169DCCEB2023CAA00028746F /* AppDelegate.swift */,
+				169DCD0B2023D0050028746F /* RegistrationViewController.swift */,
+				169DCD0C2023D0050028746F /* RegistrationViewController.xib */,
 				169DCCF22023CAA00028746F /* Assets.xcassets */,
 				169DCCF42023CAA00028746F /* LaunchScreen.storyboard */,
 				169DCCF72023CAA00028746F /* Info.plist */,
@@ -173,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */,
 				169DCCF62023CAA00028746F /* LaunchScreen.storyboard in Resources */,
 				169DCCF32023CAA00028746F /* Assets.xcassets in Resources */,
 			);
@@ -192,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */,
 				169DCCEC2023CAA00028746F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
