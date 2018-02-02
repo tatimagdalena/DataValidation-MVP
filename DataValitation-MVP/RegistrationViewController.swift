@@ -18,6 +18,9 @@ class RegistrationViewController: UIViewController {
     @IBOutlet var confirmButton: UIButton!
     
     @IBAction func confirm(_ sender: UIButton) {
+        print(nameTextField.text ?? "")
+        print(emailTextField.text ?? "")
+        print(cpfTextField.text ?? "")
     }
     
 }
@@ -28,6 +31,9 @@ extension RegistrationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // dismiss keyboard when touching outside
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+
     }
 }
 
