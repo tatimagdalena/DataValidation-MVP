@@ -2,7 +2,7 @@
 .DS_Store
 
 # Ignore user data
-DataValidation-MVP.xcodeproj/project.xcworkspace/xcuserdata/*
+DataValitation-MVP.xcodeproj/project.xcworkspace/xcuserdata/
 DataValidation-MVP.xcodeproj/xcuserdata/
 DataValidation-MVP.xcworkspace/xcuserdata/
 
