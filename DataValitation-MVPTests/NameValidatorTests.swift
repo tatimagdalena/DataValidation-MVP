@@ -69,7 +69,7 @@ class NameValidatorTests: XCTestCase {
     func testMaximumCharactersAmount() {
         
         // given
-        let name = "Fulano de Tal da Silva Sauro Orleans e Braganca Oliveira Souza Martins"
+        let name = "Fulano de Tal da Silva Sauro Orleans e Braganca Souza Martins"
         
         //when
         let validationResponse = validatorUnderTest.validate(name: name)

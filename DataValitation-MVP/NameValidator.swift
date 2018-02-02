@@ -12,8 +12,16 @@ class NameValidator {
     
     func validate(name: String) -> Bool {
         
+        let nameComponents = name.split(separator: " ")
+        if nameComponents.count < 2 {
+            return false
+        }
         
-        return false
+        if name.count <= 4 || name.count > 60 {
+            return false
+        }
+        
+        return true
     }
     
 }
