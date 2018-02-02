@@ -19,7 +19,7 @@ class EmailValidatorTests: XCTestCase {
     }
     
     override func tearDown() {
-        validatorUnderTest = EmailValidator()
+        validatorUnderTest = nil
         super.tearDown()
     }
     
