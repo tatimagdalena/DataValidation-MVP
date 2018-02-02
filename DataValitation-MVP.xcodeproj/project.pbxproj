@@ -15,6 +15,8 @@
 		169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169DCD0C2023D0050028746F /* RegistrationViewController.xib */; };
 		169DCD12202480F60028746F /* NameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD11202480F60028746F /* NameValidator.swift */; };
 		169DCD16202481710028746F /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD15202481710028746F /* NameValidatorTests.swift */; };
+		41A706782024BBDF0017AAAA /* CPFValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A706772024BBDF0017AAAA /* CPFValidator.swift */; };
+		41A7067A2024BC0C0017AAAA /* CPFValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		169DCD0C2023D0050028746F /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		169DCD11202480F60028746F /* NameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidator.swift; sourceTree = "<group>"; };
 		169DCD15202481710028746F /* NameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidatorTests.swift; sourceTree = "<group>"; };
+		41A706772024BBDF0017AAAA /* CPFValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFValidator.swift; sourceTree = "<group>"; };
+		41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				169DCD0B2023D0050028746F /* RegistrationViewController.swift */,
 				169DCD0C2023D0050028746F /* RegistrationViewController.xib */,
 				169DCD11202480F60028746F /* NameValidator.swift */,
+				41A706772024BBDF0017AAAA /* CPFValidator.swift */,
 				169DCCF22023CAA00028746F /* Assets.xcassets */,
 				169DCCF42023CAA00028746F /* LaunchScreen.storyboard */,
 				169DCCF72023CAA00028746F /* Info.plist */,
@@ -98,6 +103,7 @@
 				169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */,
 				169DCD022023CAA10028746F /* Info.plist */,
 				169DCD15202481710028746F /* NameValidatorTests.swift */,
+				41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */,
 			);
 			path = "DataValitation-MVPTests";
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A706782024BBDF0017AAAA /* CPFValidator.swift in Sources */,
 				169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */,
 				169DCD12202480F60028746F /* NameValidator.swift in Sources */,
 				169DCCEC2023CAA00028746F /* AppDelegate.swift in Sources */,
@@ -217,6 +224,7 @@
 			files = (
 				169DCD012023CAA10028746F /* DataValitation_MVPTests.swift in Sources */,
 				169DCD16202481710028746F /* NameValidatorTests.swift in Sources */,
+				41A7067A2024BC0C0017AAAA /* CPFValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
