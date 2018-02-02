@@ -31,6 +31,8 @@ extension RegistrationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Criar Cadastro"
+        
         // dismiss keyboard when touching outside
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
 
