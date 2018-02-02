@@ -15,16 +15,25 @@ class NameValidatorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
         validatorUnderTest = NameValidator()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        
         validatorUnderTest = nil
         super.tearDown()
+    }
+    
+    func testEmptyStringIsInvalid() {
+        
+        // given
+        let name = ""
+        
+        //when
+        let validationResponse = validatorUnderTest.validate(name: name)
+        
+        //then
+        XCTAssertFalse(validationResponse, "An empty string is valid when it shouldn't be.")
+        
     }
     
     func testNoLastnameIsInvalid() {
