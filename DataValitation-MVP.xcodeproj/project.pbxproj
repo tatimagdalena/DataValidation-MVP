@@ -13,6 +13,8 @@
 		169DCD012023CAA10028746F /* DataValitation_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */; };
 		169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD0B2023D0050028746F /* RegistrationViewController.swift */; };
 		169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169DCD0C2023D0050028746F /* RegistrationViewController.xib */; };
+		169DCD12202480F60028746F /* NameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD11202480F60028746F /* NameValidator.swift */; };
+		169DCD16202481710028746F /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD15202481710028746F /* NameValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		169DCD022023CAA10028746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169DCD0B2023D0050028746F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		169DCD0C2023D0050028746F /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		169DCD11202480F60028746F /* NameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidator.swift; sourceTree = "<group>"; };
+		169DCD15202481710028746F /* NameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				169DCCEB2023CAA00028746F /* AppDelegate.swift */,
 				169DCD0B2023D0050028746F /* RegistrationViewController.swift */,
 				169DCD0C2023D0050028746F /* RegistrationViewController.xib */,
+				169DCD11202480F60028746F /* NameValidator.swift */,
 				169DCCF22023CAA00028746F /* Assets.xcassets */,
 				169DCCF42023CAA00028746F /* LaunchScreen.storyboard */,
 				169DCCF72023CAA00028746F /* Info.plist */,
@@ -92,6 +97,7 @@
 			children = (
 				169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */,
 				169DCD022023CAA10028746F /* Info.plist */,
+				169DCD15202481710028746F /* NameValidatorTests.swift */,
 			);
 			path = "DataValitation-MVPTests";
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */,
+				169DCD12202480F60028746F /* NameValidator.swift in Sources */,
 				169DCCEC2023CAA00028746F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				169DCD012023CAA10028746F /* DataValitation_MVPTests.swift in Sources */,
+				169DCD16202481710028746F /* NameValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,8 +3,8 @@
 
 # Ignore user data
 DataValitation-MVP.xcodeproj/project.xcworkspace/xcuserdata/
-DataValidation-MVP.xcodeproj/xcuserdata/
 DataValidation-MVP.xcworkspace/xcuserdata/
+DataValitation-MVP.xcodeproj/xcuserdata/
 
 # Ignore build
 /Build
