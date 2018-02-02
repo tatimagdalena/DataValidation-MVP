@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		169DCCEC2023CAA00028746F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCCEB2023CAA00028746F /* AppDelegate.swift */; };
-		169DCCEE2023CAA00028746F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCCED2023CAA00028746F /* ViewController.swift */; };
-		169DCCF12023CAA00028746F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169DCCEF2023CAA00028746F /* Main.storyboard */; };
 		169DCCF32023CAA00028746F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169DCCF22023CAA00028746F /* Assets.xcassets */; };
 		169DCCF62023CAA00028746F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169DCCF42023CAA00028746F /* LaunchScreen.storyboard */; };
 		169DCD012023CAA10028746F /* DataValitation_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */; };
+		169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD0B2023D0050028746F /* RegistrationViewController.swift */; };
+		169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169DCD0C2023D0050028746F /* RegistrationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		169DCCE82023CAA00028746F /* DataValitation-MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DataValitation-MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169DCCEB2023CAA00028746F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		169DCCED2023CAA00028746F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		169DCCF02023CAA00028746F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169DCCF22023CAA00028746F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169DCCF52023CAA00028746F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169DCCF72023CAA00028746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169DCCFC2023CAA00028746F /* DataValitation-MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DataValitation-MVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169DCD002023CAA10028746F /* DataValitation_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValitation_MVPTests.swift; sourceTree = "<group>"; };
 		169DCD022023CAA10028746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169DCD0B2023D0050028746F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		169DCD0C2023D0050028746F /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				169DCCEB2023CAA00028746F /* AppDelegate.swift */,
-				169DCCED2023CAA00028746F /* ViewController.swift */,
-				169DCCEF2023CAA00028746F /* Main.storyboard */,
+				169DCD0B2023D0050028746F /* RegistrationViewController.swift */,
+				169DCD0C2023D0050028746F /* RegistrationViewController.xib */,
 				169DCCF22023CAA00028746F /* Assets.xcassets */,
 				169DCCF42023CAA00028746F /* LaunchScreen.storyboard */,
 				169DCCF72023CAA00028746F /* Info.plist */,
@@ -179,9 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */,
 				169DCCF62023CAA00028746F /* LaunchScreen.storyboard in Resources */,
 				169DCCF32023CAA00028746F /* Assets.xcassets in Resources */,
-				169DCCF12023CAA00028746F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				169DCCEE2023CAA00028746F /* ViewController.swift in Sources */,
+				169DCD0D2023D0050028746F /* RegistrationViewController.swift in Sources */,
 				169DCCEC2023CAA00028746F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +223,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		169DCCEF2023CAA00028746F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				169DCCF02023CAA00028746F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		169DCCF42023CAA00028746F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
