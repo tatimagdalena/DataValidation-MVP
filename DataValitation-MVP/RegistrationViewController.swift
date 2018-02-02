@@ -8,7 +8,7 @@
 
 import UIKit
 
-// MARK: Outlets
+// MARK: Outlets, actions & properties
 
 class RegistrationViewController: UIViewController {
 
@@ -16,12 +16,13 @@ class RegistrationViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var cpfTextField: UITextField!
     @IBOutlet var confirmButton: UIButton!
-    
     @IBAction func confirm(_ sender: UIButton) {
         print(nameTextField.text ?? "")
         print(emailTextField.text ?? "")
         print(cpfTextField.text ?? "")
     }
+    
+    private var presenter: RegistrationPresenter?
     
 }
 
@@ -37,6 +38,28 @@ extension RegistrationViewController {
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
 
     }
+}
+
+// MARK: - View Protocol -
+
+extension RegistrationViewController: ValidationView {
+    
+    func onCPFInvalid() {
+        
+    }
+    
+    func onNameInvalid() {
+        
+    }
+    
+    func onEmailInvalid() {
+        
+    }
+    
+    func onReadyToValidate() {
+        
+    }
+    
 }
 
 extension RegistrationViewController: UITextFieldDelegate {
