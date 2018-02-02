@@ -101,6 +101,18 @@ class EmailValidatorTests: XCTestCase {
         
     }
     
+    func testNoFinalPartIsInvalid() {
+        
+        // given
+        let email = "me.surname@domain"
+        
+        //when
+        let validationResponse = validatorUnderTest.validate(email: email)
+        
+        //then
+        XCTAssertFalse(validationResponse, "Having more than one @ is valid when it shouldn't be.")
+        
+    }
     
     func testInvalidCharacters() {
         
