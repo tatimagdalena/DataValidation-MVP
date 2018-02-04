@@ -15,6 +15,7 @@
 		169DCD0E2023D0050028746F /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169DCD0C2023D0050028746F /* RegistrationViewController.xib */; };
 		169DCD12202480F60028746F /* NameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD11202480F60028746F /* NameValidator.swift */; };
 		169DCD16202481710028746F /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD15202481710028746F /* NameValidatorTests.swift */; };
+		169DCD1820255CA90028746F /* RegistrationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD1720255CA90028746F /* RegistrationPresenterTests.swift */; };
 		41A706782024BBDF0017AAAA /* CPFValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A706772024BBDF0017AAAA /* CPFValidator.swift */; };
 		41A7067A2024BC0C0017AAAA /* CPFValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */; };
 		41A7067C2024D5130017AAAA /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7067B2024D5130017AAAA /* EmailValidator.swift */; };
@@ -46,6 +47,7 @@
 		169DCD0C2023D0050028746F /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		169DCD11202480F60028746F /* NameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidator.swift; sourceTree = "<group>"; };
 		169DCD15202481710028746F /* NameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidatorTests.swift; sourceTree = "<group>"; };
+		169DCD1720255CA90028746F /* RegistrationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenterTests.swift; sourceTree = "<group>"; };
 		41A706772024BBDF0017AAAA /* CPFValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFValidator.swift; sourceTree = "<group>"; };
 		41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFValidatorTests.swift; sourceTree = "<group>"; };
 		41A7067B2024D5130017AAAA /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				169DCD15202481710028746F /* NameValidatorTests.swift */,
 				41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */,
 				41A7067F2024D55C0017AAAA /* EmailValidatorTests.swift */,
+				169DCD1720255CA90028746F /* RegistrationPresenterTests.swift */,
 			);
 			path = "DataValitation-MVPTests";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				169DCD012023CAA10028746F /* DataValitation_MVPTests.swift in Sources */,
 				41A706802024D55C0017AAAA /* EmailValidatorTests.swift in Sources */,
 				169DCD16202481710028746F /* NameValidatorTests.swift in Sources */,
+				169DCD1820255CA90028746F /* RegistrationPresenterTests.swift in Sources */,
 				41A7067A2024BC0C0017AAAA /* CPFValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
