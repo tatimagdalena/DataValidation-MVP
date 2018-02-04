@@ -11,9 +11,13 @@ import Foundation
 class RegistrationPresenter {
     
     private unowned var view: ValidationView
-    let nameValidator: NameValidator
-    let emailValidator: EmailValidator
-    let cpfValidator: CPFValidator
+    private let nameValidator: NameValidator
+    private let emailValidator: EmailValidator
+    private let cpfValidator: CPFValidator
+    
+    private var isNameValid = false
+    private var isEmailValid = false
+    private var isCPFValid = false
     
     init(view: ValidationView, nameValidator: NameValidator, emailValidator: EmailValidator, cpfValidator: CPFValidator) {
         self.view = view
@@ -22,20 +26,38 @@ class RegistrationPresenter {
         self.cpfValidator = cpfValidator
     }
     
-    func userNameChanged(newText: String) {
-        
+    func userNameChanged(newName: String) {
+        isNameValid = nameValidator.validate(name: newName)
+        if !isNameValid {
+            view.onNameInvalid()
+        }
+        handleAllFieldsValidation()
     }
     
-    func userCPFChanged(newText: String) {
-        
+    func userCPFChanged(newDocument: String) {
+        isCPFValid = cpfValidator.validate(document: newDocument)
+        if !isCPFValid {
+            view.onCPFInvalid()
+        }
+        handleAllFieldsValidation()
     }
     
-    func userEmailChanged(newText: String) {
-        
+    func userEmailChanged(newEmail: String) {
+        isEmailValid = emailValidator.validate(email: newEmail)
+        if !isEmailValid {
+            view.onEmailInvalid()
+        }
+        handleAllFieldsValidation()
     }
     
     func performValidation() {
-        
+        handleAllFieldsValidation()
+    }
+    
+    private func handleAllFieldsValidation() {
+        if isNameValid && isEmailValid && isCPFValid {
+            view.onReadyToValidate()
+        }
     }
     
 }
