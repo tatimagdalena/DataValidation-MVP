@@ -8,12 +8,20 @@
 
 import Foundation
 
+protocol ValidationView: class {
+    func onCPFValidation(_ validation: Validation)
+    func onNameValidation(_ validation: Validation)
+    func onEmailValidation(_ validation: Validation)
+    func onReadyToValidate(_ validation: Validation)
+}
+
 enum HexColor: String {
     case darkGray = "#5C666A"
     case red = "#D64541"
 }
 
 enum Validation {
+    
     case valid
     case invalid(displayMessage: String?)
     
@@ -40,9 +48,14 @@ enum Validation {
     }
 }
 
-protocol ValidationView: class {
-    func onCPFValidation(_ validation: Validation)
-    func onNameValidation(_ validation: Validation)
-    func onEmailValidation(_ validation: Validation)
-    func onReadyToValidate(_ validation: Validation)
+extension Validation: Equatable {
+    static func ==(lhs: Validation, rhs: Validation) -> Bool {
+        switch (lhs, rhs) {
+        case (.valid, .valid): return true
+        case (let .invalid(leftMessage), let .invalid(rightMessage)): return leftMessage == rightMessage
+        default:
+            return false
+        }
+    }
 }
+
