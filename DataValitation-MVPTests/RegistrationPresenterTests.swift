@@ -52,6 +52,10 @@ class RegistrationPresenterTests: XCTestCase {
     }
     
     override func tearDown() {
+        MockValidationView.invalidNameCallCount = 0
+        MockValidationView.invalidEmailCallCount = 0
+        MockValidationView.invalidCPFCallCount = 0
+        MockValidationView.readyToValidateCallCount = 0
         mockView = nil
         presenterUnderTest = nil
         super.tearDown()
@@ -67,6 +71,9 @@ class RegistrationPresenterTests: XCTestCase {
         
         //then
         XCTAssertEqual(MockValidationView.invalidNameCallCount, 1)
+        XCTAssertEqual(MockValidationView.invalidEmailCallCount, 0)
+        XCTAssertEqual(MockValidationView.invalidCPFCallCount, 0)
+        XCTAssertEqual(MockValidationView.readyToValidateCallCount, 0)
         
     }
     
@@ -79,7 +86,10 @@ class RegistrationPresenterTests: XCTestCase {
         presenterUnderTest.userEmailChanged(newEmail: email)
         
         //then
+        XCTAssertEqual(MockValidationView.invalidNameCallCount, 0)
         XCTAssertEqual(MockValidationView.invalidEmailCallCount, 1)
+        XCTAssertEqual(MockValidationView.invalidCPFCallCount, 0)
+        XCTAssertEqual(MockValidationView.readyToValidateCallCount, 0)
         
     }
     
@@ -92,7 +102,10 @@ class RegistrationPresenterTests: XCTestCase {
         presenterUnderTest.userCPFChanged(newDocument: cpf)
         
         //then
+        XCTAssertEqual(MockValidationView.invalidNameCallCount, 0)
+        XCTAssertEqual(MockValidationView.invalidEmailCallCount, 0)
         XCTAssertEqual(MockValidationView.invalidCPFCallCount, 1)
+        XCTAssertEqual(MockValidationView.readyToValidateCallCount, 0)
         
     }
     
@@ -109,6 +122,9 @@ class RegistrationPresenterTests: XCTestCase {
         presenterUnderTest.userCPFChanged(newDocument: cpf)
         
         //then
+        XCTAssertEqual(MockValidationView.invalidNameCallCount, 0)
+        XCTAssertEqual(MockValidationView.invalidEmailCallCount, 0)
+        XCTAssertEqual(MockValidationView.invalidCPFCallCount, 0)
         XCTAssertEqual(MockValidationView.readyToValidateCallCount, 1)
         
     }
