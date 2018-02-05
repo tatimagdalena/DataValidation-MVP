@@ -29,7 +29,9 @@ class RegistrationPresenter {
     func userNameChanged(newName: String) {
         isNameValid = nameValidator.validate(name: newName)
         if !isNameValid {
-            view.onNameInvalid()
+            view.onNameValidation(.invalid(displayMessage: "Entre com nome e sobrenome"))
+        } else {
+            view.onNameValidation(.valid)
         }
         handleAllFieldsValidation()
     }
@@ -37,15 +39,20 @@ class RegistrationPresenter {
     func userCPFChanged(newDocument: String) {
         isCPFValid = cpfValidator.validate(document: newDocument)
         if !isCPFValid {
-            view.onCPFInvalid()
+            view.onCPFValidation(.invalid(displayMessage: "Entre com um CPF válido"))
+        } else {
+            view.onCPFValidation(.valid)
         }
+        
         handleAllFieldsValidation()
     }
     
     func userEmailChanged(newEmail: String) {
         isEmailValid = emailValidator.validate(email: newEmail)
         if !isEmailValid {
-            view.onEmailInvalid()
+            view.onEmailValidation(.invalid(displayMessage: "Entre com um email válido"))
+        } else {
+            view.onEmailValidation(.valid)
         }
         handleAllFieldsValidation()
     }
@@ -56,7 +63,9 @@ class RegistrationPresenter {
     
     private func handleAllFieldsValidation() {
         if isNameValid && isEmailValid && isCPFValid {
-            view.onReadyToValidate()
+            view.onReadyToValidate(.valid)
+        } else {
+            view.onReadyToValidate(.invalid(displayMessage: nil))
         }
     }
     

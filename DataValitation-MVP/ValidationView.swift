@@ -8,9 +8,41 @@
 
 import Foundation
 
-@objc protocol ValidationView {
-    func onCPFInvalid()
-    func onNameInvalid()
-    func onEmailInvalid()
-    func onReadyToValidate()
+enum HexColor: String {
+    case darkGray = "#5C666A"
+    case red = "#D64541"
+}
+
+enum Validation {
+    case valid
+    case invalid(displayMessage: String?)
+    
+    var colorHex: HexColor {
+        switch self {
+        case .valid: return .darkGray
+        case .invalid: return .red
+        }
+    }
+    
+    var message: String {
+        switch self {
+        case .invalid(let text): return text ?? ""
+        default:
+            return ""
+        }
+    }
+    
+    var booleanValue: Bool {
+        switch self {
+        case .valid: return true
+        case .invalid: return false
+        }
+    }
+}
+
+protocol ValidationView: class {
+    func onCPFValidation(_ validation: Validation)
+    func onNameValidation(_ validation: Validation)
+    func onEmailValidation(_ validation: Validation)
+    func onReadyToValidate(_ validation: Validation)
 }

@@ -44,21 +44,22 @@ extension RegistrationViewController {
 
 extension RegistrationViewController: ValidationView {
     
-    func onCPFInvalid() {
+    func onCPFValidation(_ validation: Validation) {
         
     }
     
-    func onNameInvalid() {
+    func onNameValidation(_ validation: Validation) {
         
     }
     
-    func onEmailInvalid() {
+    func onEmailValidation(_ validation: Validation) {
         
     }
     
-    func onReadyToValidate() {
+    func onReadyToValidate(_ validation: Validation) {
         
     }
+    
     
 }
 
