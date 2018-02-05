@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='DataValitation-MVPTests.xctest' tests='27' failures='0'>
+  <testsuite name='DataValitation_MVPTests.CPFValidatorTests' tests='6' failures='0'>
+    <testcase classname='DataValitation_MVPTests.CPFValidatorTests' name='testEmptyStringIsInvalid' time='0.014'/>
+    <testcase classname='DataValitation_MVPTests.CPFValidatorTests' name='testFalsePositiveIsInvalid' time='0.005'/>
+    <testcase classname='DataValitation_MVPTests.CPFValidatorTests' name='testFewerDigitsIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.CPFValidatorTests' name='testMoreDigitsIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.CPFValidatorTests' name='testNoNumberDigitsIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.CPFValidatorTests' name='testValidDocumentNumber' time='0.005'/>
+  </testsuite>
+  <testsuite name='DataValitation_MVPTests.DataValitation_MVPTests' tests='2' failures='0'>
+    <testcase classname='DataValitation_MVPTests.DataValitation_MVPTests' name='testExample' time='0.000'/>
+    <testcase classname='DataValitation_MVPTests.DataValitation_MVPTests' name='testPerformanceExample' time='0.445'/>
+  </testsuite>
+  <testsuite name='DataValitation_MVPTests.EmailValidatorTests' tests='9' failures='0'>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testConsecutiveDotsIsInvalid' time='0.013'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testDotAtBegginingIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testDotAtLocalPartEndIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testEmptyStringIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testInvalidCharacters' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testMoreThanOneAtIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testNoAtIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testNoFinalPartIsInvalid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.EmailValidatorTests' name='testValidEmail' time='0.001'/>
+  </testsuite>
+  <testsuite name='DataValitation_MVPTests.NameValidatorTests' tests='6' failures='0'>
+    <testcase classname='DataValitation_MVPTests.NameValidatorTests' name='testEmptyStringIsInvalid' time='0.002'/>
+    <testcase classname='DataValitation_MVPTests.NameValidatorTests' name='testMaximumCharactersAmount' time='0.002'/>
+    <testcase classname='DataValitation_MVPTests.NameValidatorTests' name='testMinimumCharactersAmount' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.NameValidatorTests' name='testNoFirstNameIsInvalid' time='0.000'/>
+    <testcase classname='DataValitation_MVPTests.NameValidatorTests' name='testNoLastnameIsInvalid' time='0.000'/>
+    <testcase classname='DataValitation_MVPTests.NameValidatorTests' name='testValidNameAndLastname' time='0.000'/>
+  </testsuite>
+  <testsuite name='DataValitation_MVPTests.RegistrationPresenterTests' tests='4' failures='0'>
+    <testcase classname='DataValitation_MVPTests.RegistrationPresenterTests' name='testAllInputsAreValid' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.RegistrationPresenterTests' name='testInvalidCPFChange' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.RegistrationPresenterTests' name='testInvalidEmailChange' time='0.001'/>
+    <testcase classname='DataValitation_MVPTests.RegistrationPresenterTests' name='testInvalidNameChange' time='0.000'/>
+  </testsuite>
+</testsuites>
