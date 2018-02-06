@@ -1,0 +1,47 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+fastlane_version "2.2.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan(
+      clean: true,
+      code_coverage: true,
+      output_types: "html,junit",
+      output_directory: "fastlane/test_output",
+      devices: ["iPhone 7"],
+      scheme: "DataValitation-MVP"
+    )
+
+    slather(
+      scheme: "DataValitation-MVP",
+      proj: "DataValitation-MVP.xcodeproj",
+      cobertura_xml: true,
+      output_directory: "fastlane/test_output/code_coverage/slather"
+    )
+
+    xcov(
+      project: "DataValitation-MVP.xcodeproj",
+      scheme: "DataValitation-MVP",
+      output_directory: "fastlane/test_output/code_coverage/xcov"
+    )
+
+  end
+
+end
