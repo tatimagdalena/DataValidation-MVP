@@ -36,12 +36,6 @@ platform :ios do
       output_directory: "fastlane/test_output/code_coverage/slather"
     )
 
-    # sh "slather coverage --ignore '../../*' \
-    # --cobertura-xml \
-    # --scheme DataValitation-MVP \
-    # --output-directory test_output/code_coverage/ \
-    # ../DataValitation-MVP.xcodeproj"
-
     xcov(
       project: "DataValitation-MVP.xcodeproj",
       scheme: "DataValitation-MVP",
