@@ -2,22 +2,15 @@ GEM
   remote: https://rubygems.org/
   specs:
     CFPropertyList (2.3.6)
-    activesupport (4.2.10)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     atomos (0.1.2)
     babosa (1.0.2)
     claide (1.0.2)
-    clamp (0.6.5)
     colored (1.2)
     colored2 (3.1.2)
     commander-fastlane (4.4.5)
       highline (~> 1.7.2)
-    concurrent-ruby (1.0.5)
     declarative (0.0.10)
     declarative-option (0.1.0)
     domain_name (0.5.20170404)
@@ -86,8 +79,6 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
-    i18n (0.9.3)
-      concurrent-ruby (~> 1.0)
     json (2.1.0)
     jwt (2.1.0)
     little-plugger (1.1.4)
@@ -99,14 +90,10 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_magick (4.5.1)
-    mini_portile2 (2.1.0)
-    minitest (5.10.1)
     multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     nanaimo (0.2.3)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
     os (0.9.6)
     plist (3.4.0)
     public_suffix (2.0.5)
@@ -124,22 +111,13 @@ GEM
       jwt (>= 1.5, < 3.0)
       multi_json (~> 1.10)
     slack-notifier (2.3.2)
-    slather (2.4.4)
-      CFPropertyList (~> 2.2)
-      activesupport (>= 4.0.2, < 5)
-      clamp (~> 0.6)
-      nokogiri (>= 1.6, < 1.7)
-      xcodeproj (~> 1.4)
     terminal-notifier (1.8.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
     tty-cursor (0.5.0)
     tty-screen (0.6.4)
     tty-spinner (0.8.0)
       tty-cursor (>= 0.5.0)
-    tzinfo (1.2.4)
-      thread_safe (~> 0.1)
     uber (0.1.0)
     unf (0.1.4)
       unf_ext
@@ -168,7 +146,6 @@ PLATFORMS
 
 DEPENDENCIES
   fastlane
-  slather
   xcov
 
 BUNDLED WITH
