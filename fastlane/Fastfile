@@ -20,7 +20,34 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-    scan(devices: ["iPhone 7"])
+    scan(
+      clean: true,
+      code_coverage: true,
+      output_types: "html,junit",
+      output_directory: "fastlane/test_output",
+      devices: ["iPhone 7"],
+      scheme: "DataValitation-MVP"
+    )
+
+    slather(
+      scheme: "DataValitation-MVP",
+      proj: "DataValitation-MVP.xcodeproj",
+      cobertura_xml: true,
+      output_directory: "fastlane/test_output/code_coverage/slather"
+    )
+
+    # sh "slather coverage --ignore '../../*' \
+    # --cobertura-xml \
+    # --scheme DataValitation-MVP \
+    # --output-directory test_output/code_coverage/ \
+    # ../DataValitation-MVP.xcodeproj"
+
+    xcov(
+      project: "DataValitation-MVP.xcodeproj",
+      scheme: "DataValitation-MVP",
+      output_directory: "fastlane/test_output/code_coverage/xcov"
+    )
+
   end
 
 end
