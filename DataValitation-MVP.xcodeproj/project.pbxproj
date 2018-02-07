@@ -17,6 +17,7 @@
 		169DCD16202481710028746F /* NameValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD15202481710028746F /* NameValidatorTests.swift */; };
 		169DCD1820255CA90028746F /* RegistrationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD1720255CA90028746F /* RegistrationPresenterTests.swift */; };
 		169DCD1B20288D290028746F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DCD1A20288D290028746F /* UIColor.swift */; };
+		41483603202B2C9D00964741 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41483602202B2C9D00964741 /* UIButton.swift */; };
 		41A706782024BBDF0017AAAA /* CPFValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A706772024BBDF0017AAAA /* CPFValidator.swift */; };
 		41A7067A2024BC0C0017AAAA /* CPFValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */; };
 		41A7067C2024D5130017AAAA /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7067B2024D5130017AAAA /* EmailValidator.swift */; };
@@ -50,6 +51,7 @@
 		169DCD15202481710028746F /* NameValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidatorTests.swift; sourceTree = "<group>"; };
 		169DCD1720255CA90028746F /* RegistrationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenterTests.swift; sourceTree = "<group>"; };
 		169DCD1A20288D290028746F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		41483602202B2C9D00964741 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		41A706772024BBDF0017AAAA /* CPFValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFValidator.swift; sourceTree = "<group>"; };
 		41A706792024BC0C0017AAAA /* CPFValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFValidatorTests.swift; sourceTree = "<group>"; };
 		41A7067B2024D5130017AAAA /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				169DCD1A20288D290028746F /* UIColor.swift */,
+				41483602202B2C9D00964741 /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				169DCD1B20288D290028746F /* UIColor.swift in Sources */,
 				169DCD12202480F60028746F /* NameValidator.swift in Sources */,
 				169DCCEC2023CAA00028746F /* AppDelegate.swift in Sources */,
+				41483603202B2C9D00964741 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
