@@ -12,10 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="DataValitation_MVP" customModuleProvider="target">
             <connections>
+                <outlet property="confirmButton" destination="0KP-b3-nWc" id="Ztw-H5-tBH"/>
+                <outlet property="cpfTextField" destination="G1z-jX-gRE" id="Oxt-fW-mH7"/>
+                <outlet property="emailTextField" destination="Jce-qu-guj" id="0Kr-v2-djh"/>
                 <outlet property="invalidCPFLabel" destination="aUc-DK-2uq" id="eqK-ck-gdk"/>
                 <outlet property="invalidEmailLabel" destination="Ege-Bh-ihp" id="x9g-Hy-cLH"/>
                 <outlet property="invalidNameLabel" destination="eA6-Xc-Kta" id="j7S-E7-4tp"/>
+                <outlet property="nameTextField" destination="fgy-uM-Snr" id="rn3-H7-Vf7"/>
                 <outlet property="toolbarView" destination="agC-0L-OAf" id="SJa-CG-Fx4"/>
+                <outlet property="view" destination="E7o-qQ-a8n" id="AEJ-54-VqK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -86,6 +91,9 @@
                     <state key="normal" title="CONFIRMAR">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="confirm:" destination="-1" eventType="touchUpInside" id="HqF-6j-vQ6"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-Xc-Kta">
                     <rect key="frame" x="318.5" y="83" width="28.5" height="13.5"/>

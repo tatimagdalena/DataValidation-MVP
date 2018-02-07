@@ -43,11 +43,16 @@ extension RegistrationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Criar Cadastro"
+        viewInitialConfiguration()
+        textFieldsInitialConfiguration()
         
+        presenter = RegistrationPresenter(view: self, nameValidator: NameValidator(), emailValidator: EmailValidator(), cpfValidator: CPFValidator())
+    }
+    
+    func viewInitialConfiguration() {
+        title = "Criar Cadastro"
         // dismiss keyboard when touching outside
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-        
+        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
     }
 }
 
@@ -74,6 +79,22 @@ extension RegistrationViewController: ValidationView {
     
 }
 
+// MARK: - Textfield -
+
 extension RegistrationViewController: UITextFieldDelegate {
+    
+    func textFieldsInitialConfiguration() {
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        cpfTextField.delegate = self
+        
+        nameTextField.inputAccessoryView = toolbarView
+        emailTextField.inputAccessoryView = toolbarView
+        cpfTextField.inputAccessoryView = toolbarView
+        
+        nameTextField.layer.borderWidth = 0.5
+        emailTextField.layer.borderWidth = 0.5
+        cpfTextField.layer.borderWidth = 0.5
+    }
     
 }
