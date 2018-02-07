@@ -12,9 +12,20 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
 
+    // toolbar
+    @IBOutlet var toolbarView: UIView!
+    @IBAction func closeKeyboard(_ sender: UIButton) {
+        view.endEditing(true)
+    }
+    // textfields
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var cpfTextField: UITextField!
+    // labels
+    @IBOutlet var invalidNameLabel: UILabel!
+    @IBOutlet var invalidEmailLabel: UILabel!
+    @IBOutlet var invalidCPFLabel: UILabel!
+    // button
     @IBOutlet var confirmButton: UIButton!
     @IBAction func confirm(_ sender: UIButton) {
         print(nameTextField.text ?? "")
@@ -36,7 +47,7 @@ extension RegistrationViewController {
         
         // dismiss keyboard when touching outside
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-
+        
     }
 }
 
